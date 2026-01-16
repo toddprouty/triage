@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todd Prouty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900" rel="stylesheet">
+    <link href="./dist/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-linear-to-b from-slate-800 to-teal-800 text-white lato-regular text-lg">
+    <!-- Icons -->
+    <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="icon-standard" viewBox="0 0 256 256">
+          <!-- Source: https://phosphoricons.com/ icon: first-aid (fill) -->
+          <path d="M232,108v40a16,16,0,0,1-16,16H164v52a16,16,0,0,1-16,16H108a16,16,0,0,1-16-16V164H40a16,16,0,0,1-16-16V108A16,16,0,0,1,40,92H92V40a16,16,0,0,1,16-16h40a16,16,0,0,1,16,16V92h52A16,16,0,0,1,232,108Z"></path>
+        </symbol>
+        
+        <symbol id="icon-priority" viewBox="0 0 24 24">
+          <!-- Source: https://heroicons.com/solid icon: bolt -->
+          <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
+        </symbol>
+
+        <symbol id="icon-arrow-fat-right" viewBox="0 0 256 256">
+          <path d="M48,80v96a8,8,0,0,1-16,0V80a8,8,0,0,1,16,0Zm24-8a8,8,0,0,0-8,8v96a8,8,0,0,0,16,0V80A8,8,0,0,0,72,72Zm165.66,50.34-96-96A8,8,0,0,0,128,32V72H104a8,8,0,0,0-8,8v96a8,8,0,0,0,8,8h24v40a8,8,0,0,0,13.66,5.66l96-96A8,8,0,0,0,237.66,122.34Z"></path>
+        </symbol>
+      </defs>
+    </svg>
+
+
+    <main class="max-w-3xl mx-auto px-6 py-24 space-y-20">
+      <section class="space-y-6 lg:-ml-10 lg:-mr-10">
+        <h1 class="text-5xl/14 text-center mb-10">
+          <span class="afacad-flux-bold tracking-wider">Expert help for website problems</span>
+          <span class="block afacad-flux-regular tracking-wide bg-linear-to-b from-teal-300/95 to-teal-600/95 bg-clip-text text-transparent">that you just need <em class="underline underline-offset-8 decoration-wavy">fixed.</em></span>
+        </h1>
+        <p class="afacad-flux-regular text-3xl text-center mb-10">
+          No contracts. No retainers.<br>
+          One fixed payment. Guaranteed results.
+        </p>
+        <p>
+          If you’re stuck on a web issue that <em>should</em> be solvable but is
+          taking longer than you like, or if you simply have too much on your
+          (or your agency’s) plate, Rapid Web Triage provides focused diagnosis
+          and resolution so you can move on to other priorities.
+        </p>
+        <p>
+          This is not emergency outage support. You probably handle that
+          in-house anyway. It’s senior-level troubleshooting for non-outage
+          problems that are costing you time and mental energy.
+        </p>
+        <div class="mt-8 flex justify-center">
+          <a href="#lets-go" class="flex items-center gap-2 px-6 py-5 bg-linear-to-b from-teal-500/90 to-teal-700/90 transition hover:scale-105 duration-300 ease-in-out rounded-md afacad-flux-bold text-2xl tracking-wider"> 
+            <svg class="size-5 fill-white/40">
+              <use href="#icon-arrow-fat-right"></use>
+            </svg>
+            <span>Start Rapid Web Triage</span>
+            <svg class="size-5 fill-white/40 rotate-180">
+              <use href="#icon-arrow-fat-right"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="afacad-flux-bold text-3xl" id="who-this-is-for">
+          Who this is for
+        </h2>
+        <p>Rapid Web Triage is designed for:</p>
+        <ul class="list-disc list-outside ml-4 space-y-2">
+          <li>Small agencies and dev teams</li>
+          <li>Solo developers and freelancers</li>
+          <li>
+            Technical founders or in-house teams without spare senior bandwidth
+          </li>
+          <li>Website owners without a maintenance contract</li>
+        </ul>
+        <p>
+          If you’re comfortable sharing code and want an experienced set of eyes
+          on a real problem, you’re in the right place.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="afacad-flux-bold text-3xl" id="what-i-can-help-with">
+          What we can help with
+        </h2>
+        <p>Common examples include:</p>
+        <ul class="list-disc list-outside ml-4 space-y-2">
+          <li>
+            Broken layouts or CSS issues (Flexbox, Grid, responsive problems)
+          </li>
+          <li>
+            CMS issues (content modeling, templates, configuration quirks)
+          </li>
+          <li>
+            JavaScript behavior that’s confusing, inconsistent, or failing
+            silently
+          </li>
+          <li>Performance issues where the root cause isn’t obvious</li>
+        </ul>
+        <p>
+          This service focuses on <strong>diagnosis and targeted fixes</strong>,
+          not large refactors or long-term projects.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="afacad-flux-bold text-3xl" id="how-it-works">
+          How it works
+        </h2>
+        <ol class="list-decimal list-outside ml-5 space-y-4">
+          <li>
+            <p class="mb-2"><strong>Purchase triage</strong></p>
+            <p>Choose standard or priority service.</p>
+          </li>
+          <li>
+            <p class="mb-2"><strong>Submit the intake form</strong></p>
+            <p>Describe the issue and share relevant code securely.</p>
+          </li>
+          <li>
+            <p class="mb-2"><strong>Investigation &amp; updates</strong></p>
+            <p>The issue gets reviewed and you are kept updated by email.</p>
+          </li>
+          <li>
+            <p class="mb-2"><strong>Outcome</strong></p>
+            <p class="mb-2">You’ll receive one of the following:</p>
+            <ul class="list-disc list-outside ml-4 space-y-2">
+              <li>A fix or implemented improvement</li>
+              <li>A clear diagnosis with recommended next steps</li>
+              <li>A full refund if no clear path forward is identified</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="afacad-flux-bold text-3xl" id="timing--urgency">
+          Timing &amp; urgency
+        </h2>
+        <ul class="list-disc list-outside ml-4 space-y-2">
+          <li><strong>Standard Triage:</strong> 3–5 business days</li>
+          <li><strong>Priority Triage:</strong> Next business day</li>
+        </ul>
+        <p>
+          If your issue turns out to be more complex than expected or can’t be
+          completed in the requested timeframe, you’ll be notified promptly.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="afacad-flux-bold text-3xl" id="guarantee">
+          Guarantee
+        </h2>
+        <p>
+          This service covers <strong>triage and attempted resolution of non-outage web issues</strong>.
+        </p>
+        <p>
+          If no clear path forward is identified, you will receive a
+          <strong>full refund</strong>.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="afacad-flux-bold text-3xl" id="why-trust-this-service">
+          Why trust this service?
+        </h2>
+        <ul class="list-disc list-outside ml-4 space-y-2">
+          <li><strong>30 years of web development experience</strong></li>
+          <li>
+            Deep experience with CMSs, front-end architecture, and debugging
+            across many platforms and technologies
+          </li>
+          <li>Strong CSS and layout expertise</li>
+          <li>Calm, methodical troubleshooting — even on unfamiliar stacks</li>
+          <li>Clear boundaries and straightforward communication</li>
+        </ul>
+        <p>
+          We don’t oversell what’s possible, and we won’t leave you guessing about
+          where things stand.
+        </p>
+      </section>
+
+      <section class="space-y-4 lg:-ml-10 lg:-mr-10">
+        <h2 class="afacad-flux-bold text-5xl/14 tracking-wider text-center mb-8" id="lets-go">
+          Ready to hand off your issue?
+        </h2>
+        
+        <div class="flex justify-between gap-8">
+          <div class="flex flex-col gap-5 border border-white bg-white/15 p-8">
+            <h3 class="flex justify-center items-center text-xl font-semibold mb-2 gap-1.5">
+              <svg class="size-6 fill-red-400/90">
+                <use href="#icon-standard"></use>
+              </svg>
+              <span>Standard Triage</span>
+            </h3>
+            <p class="lato-black text-5xl tracking-wide mb-4 text-center">$250</p>
+            <ul class="list-disc list-outside ml-4 mb-4 space-y-2">
+              <li><strong>3–5 business day turnaround</strong></li>
+              <li>Focused diagnosis and resolution of one issue</li>
+              <li>Full refund if no clear path forward is identified</li>
+            </ul>
+            <a href="#"
+               class="flex justify-center items-center rounded-md bg-linear-to-b from-slate-600/90 to-slate-800/90 hover:scale-105 transition duration-300 ease-in-out px-5 py-4 text-center text-white mt-auto afacad-flux-bold text-2xl tracking-wider">
+              Get Started
+            </a>
+          </div>
+
+          <div class="flex flex-col gap-5 border border-white bg-white/15 p-8">
+            <h3 class="flex justify-center items-center text-xl font-semibold mb-2 gap-1">
+              <svg class="size-6 fill-amber-400/90">
+                <use href="#icon-priority"></use>
+              </svg>
+              <span>Priority Triage</span>
+            </h3>
+            <p class="lato-black text-5xl tracking-wide mb-4 text-center">$450</p>
+            <ul class="list-disc list-outside ml-4 mb-4 space-y-2">
+              <li><strong>Next business day turnaround</strong></li>
+              <li>Focused diagnosis and resolution of one issue</li>
+              <li>Full refund if no clear path forward is identified</li>
+            </ul>
+            <a href="#"
+               class="flex justify-center items-center rounded-md bg-linear-to-b from-slate-600/90 to-slate-800/90 hover:scale-105 transition duration-300 ease-in-out px-5 py-4 text-center text-white mt-auto afacad-flux-bold text-2xl tracking-wider">
+              Get Started
+            </a>
+          </div>
+        
+        </div>
+      </section>
+
+
+
+        <!-- <section class="space-y-4">
+      <h2 class="afacad-flux-bold text-3xl">Get in touch</h2>
+      <p class="text-gray-700">
+        The easiest way to reach me is via email or a short form.
+      </p>
+      <div class="flex gap-4">
+        <a href="mailto:you@email.com"
+           class="inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white">
+          Email me
+        </a>
+        <a href="https://tally.so/your-form"
+           class="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium">
+          Contact form
+        </a>
+      </div>
+    </section> -->
+      
+    </main>
+  </body>
+</html>
