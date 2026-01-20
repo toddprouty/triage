@@ -13,17 +13,17 @@
     <!-- Icons -->
     <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <symbol id="icon-standard" viewBox="0 0 256 256">
+        <symbol id="icon--standard" viewBox="0 0 256 256">
           <!-- Source: https://phosphoricons.com/ icon: first-aid (fill) -->
           <path d="M232,108v40a16,16,0,0,1-16,16H164v52a16,16,0,0,1-16,16H108a16,16,0,0,1-16-16V164H40a16,16,0,0,1-16-16V108A16,16,0,0,1,40,92H92V40a16,16,0,0,1,16-16h40a16,16,0,0,1,16,16V92h52A16,16,0,0,1,232,108Z"></path>
         </symbol>
         
-        <symbol id="icon-priority" viewBox="0 0 24 24">
+        <symbol id="icon--priority" viewBox="0 0 24 24">
           <!-- Source: https://heroicons.com/solid icon: bolt -->
           <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
         </symbol>
 
-        <symbol id="icon-arrow-fat-right" viewBox="0 0 256 256">
+        <symbol id="icon--arrow-fat-right" viewBox="0 0 256 256">
           <path d="M48,80v96a8,8,0,0,1-16,0V80a8,8,0,0,1,16,0Zm24-8a8,8,0,0,0-8,8v96a8,8,0,0,0,16,0V80A8,8,0,0,0,72,72Zm165.66,50.34-96-96A8,8,0,0,0,128,32V72H104a8,8,0,0,0-8,8v96a8,8,0,0,0,8,8h24v40a8,8,0,0,0,13.66,5.66l96-96A8,8,0,0,0,237.66,122.34Z"></path>
         </symbol>
       </defs>
@@ -48,18 +48,16 @@
           and resolution so you can move on to other priorities.
         </p>
         <p>
-          This is not emergency outage support. You probably handle that
-          in-house anyway. It’s senior-level troubleshooting for non-outage
-          problems that are costing you time and mental energy.
+          This isn't for site-down emergencies (you probably handle those in-house). It's for stubborn issues that should be solved by now but keep getting pushed to tomorrow.
         </p>
         <div class="mt-8 flex justify-center">
           <a href="#lets-go" class="flex items-center gap-2 px-6 py-5 bg-linear-to-b from-teal-500/90 to-teal-700/90 transition hover:scale-105 duration-300 ease-in-out rounded-md afacad-flux-bold text-2xl tracking-wider"> 
             <svg class="size-5 fill-white/40">
-              <use href="#icon-arrow-fat-right"></use>
+              <use href="#icon--arrow-fat-right"></use>
             </svg>
             <span>Start Rapid Web Triage</span>
             <svg class="size-5 fill-white/40 rotate-180">
-              <use href="#icon-arrow-fat-right"></use>
+              <use href="#icon--arrow-fat-right"></use>
             </svg>
           </a>
         </div>
@@ -193,7 +191,7 @@
           <div class="flex flex-col gap-5 border border-white bg-white/15 p-8">
             <h3 class="flex justify-center items-center text-xl font-semibold mb-2 gap-1.5">
               <svg class="size-6 fill-red-400/90">
-                <use href="#icon-standard"></use>
+                <use href="#icon--standard"></use>
               </svg>
               <span>Standard Triage</span>
             </h3>
@@ -212,7 +210,7 @@
           <div class="flex flex-col gap-5 border border-white bg-white/15 p-8">
             <h3 class="flex justify-center items-center text-xl font-semibold mb-2 gap-1">
               <svg class="size-6 fill-amber-400/90">
-                <use href="#icon-priority"></use>
+                <use href="#icon--priority"></use>
               </svg>
               <span>Priority Triage</span>
             </h3>
