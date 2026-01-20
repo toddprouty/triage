@@ -4,41 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todd Prouty</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900"
+      rel="stylesheet"
+    />
     <link href="./dist/styles.css" rel="stylesheet" />
   </head>
-  <body class="bg-linear-to-b from-slate-800 to-teal-800 text-white lato-regular text-lg">
+  <body
+    class="bg-linear-to-b from-slate-800 to-teal-800 text-white lato-regular text-lg"
+  >
     <!-- Icons -->
     <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <symbol id="icon--standard" viewBox="0 0 256 256">
           <!-- Source: https://phosphoricons.com/ icon: first-aid (fill) -->
-          <path d="M232,108v40a16,16,0,0,1-16,16H164v52a16,16,0,0,1-16,16H108a16,16,0,0,1-16-16V164H40a16,16,0,0,1-16-16V108A16,16,0,0,1,40,92H92V40a16,16,0,0,1,16-16h40a16,16,0,0,1,16,16V92h52A16,16,0,0,1,232,108Z"></path>
+          <path
+            d="M232,108v40a16,16,0,0,1-16,16H164v52a16,16,0,0,1-16,16H108a16,16,0,0,1-16-16V164H40a16,16,0,0,1-16-16V108A16,16,0,0,1,40,92H92V40a16,16,0,0,1,16-16h40a16,16,0,0,1,16,16V92h52A16,16,0,0,1,232,108Z"
+          />
         </symbol>
-        
+
         <symbol id="icon--priority" viewBox="0 0 24 24">
           <!-- Source: https://heroicons.com/solid icon: bolt -->
-          <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
+          <path
+            fill-rule="evenodd"
+            d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z"
+            clip-rule="evenodd"
+          />
         </symbol>
 
         <symbol id="icon--arrow-fat-right" viewBox="0 0 256 256">
-          <path d="M48,80v96a8,8,0,0,1-16,0V80a8,8,0,0,1,16,0Zm24-8a8,8,0,0,0-8,8v96a8,8,0,0,0,16,0V80A8,8,0,0,0,72,72Zm165.66,50.34-96-96A8,8,0,0,0,128,32V72H104a8,8,0,0,0-8,8v96a8,8,0,0,0,8,8h24v40a8,8,0,0,0,13.66,5.66l96-96A8,8,0,0,0,237.66,122.34Z"></path>
+          <path
+            d="M48,80v96a8,8,0,0,1-16,0V80a8,8,0,0,1,16,0Zm24-8a8,8,0,0,0-8,8v96a8,8,0,0,0,16,0V80A8,8,0,0,0,72,72Zm165.66,50.34-96-96A8,8,0,0,0,128,32V72H104a8,8,0,0,0-8,8v96a8,8,0,0,0,8,8h24v40a8,8,0,0,0,13.66,5.66l96-96A8,8,0,0,0,237.66,122.34Z"
+          />
+        </symbol>
+
+        <symbol id="icon--shield-check" viewBox="0 0 256 256">
+          <path
+            d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm-34.32,69.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+          />
+        </symbol>
+
+        <symbol id="icon--clock" viewBox="0 0 256 256">
+          <path
+            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm56,112H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48a8,8,0,0,1,0,16Z"
+          />
         </symbol>
       </defs>
     </svg>
 
-
-    <main class="max-w-3xl mx-auto px-6 py-24 space-y-20">
-      <section class="space-y-6 lg:-ml-10 lg:-mr-10">
+    <main class="max-w-3xl mx-auto px-6 py-24 space-y-24">
+      <section class="space-y-6 lg:-mx-10">
         <h1 class="text-5xl/14 text-center mb-10">
-          <span class="afacad-flux-bold tracking-wider">Expert help for website problems</span>
-          <span class="inline-block afacad-flux-regular tracking-wide bg-linear-to-b from-teal-300/95 to-teal-600/95 bg-clip-text text-transparent">that you just need</span>
-          <em class="afacad-flux-regular tracking-wider gradient-underline italic">fixed</em>        
+          <span class="afacad-flux-bold tracking-wider"
+            >Expert help for website problems</span
+          >
+          <span
+            class="inline-block afacad-flux-regular tracking-wide bg-linear-to-b from-teal-300/95 to-teal-600/95 bg-clip-text text-transparent"
+            >that you just need</span
+          >
+          <em
+            class="afacad-flux-regular tracking-wider gradient-underline italic"
+            >fixed</em
+          >
         </h1>
         <p class="afacad-flux-regular text-3xl text-center mb-10">
-          No contracts. No retainers.<br>
+          No contracts. No retainers.<br />
           One fixed payment. Guaranteed results.
         </p>
         <p>
@@ -48,10 +80,15 @@
           and resolution so you can move on to other priorities.
         </p>
         <p>
-          This isn't for site-down emergencies (you probably handle those in-house). It's for stubborn issues that should be solved by now but keep getting pushed to tomorrow.
+          This isn't for site-down emergencies (you probably handle those
+          in-house). It's for stubborn issues that should be solved by now but
+          keep getting pushed to tomorrow.
         </p>
         <div class="mt-8 flex justify-center">
-          <a href="#lets-go" class="flex items-center gap-2 px-6 py-5 bg-linear-to-b from-teal-500/90 to-teal-700/90 transition hover:scale-105 duration-300 ease-in-out rounded-md afacad-flux-bold text-2xl tracking-wider"> 
+          <a
+            href="#lets-go"
+            class="flex items-center gap-2 px-6 py-5 bg-linear-to-b from-teal-500/90 to-teal-700/90 transition hover:scale-105 duration-300 ease-in-out rounded-md afacad-flux-bold text-2xl tracking-wider"
+          >
             <svg class="size-5 fill-white/40">
               <use href="#icon--arrow-fat-right"></use>
             </svg>
@@ -135,32 +172,53 @@
         </ol>
       </section>
 
-      <section class="space-y-4">
-        <h2 class="afacad-flux-bold text-3xl" id="timing--urgency">
-          Timing &amp; urgency
-        </h2>
-        <ul class="list-disc list-outside ml-4 space-y-2">
-          <li><strong>Standard Triage:</strong> 3–5 business days</li>
-          <li><strong>Priority Triage:</strong> Next business day</li>
-        </ul>
-        <p>
-          If your issue turns out to be more complex than expected or can’t be
-          completed in the requested timeframe, you’ll be notified promptly.
-        </p>
-      </section>
+      <div class="grid grid-cols-2 gap-8 lg:-mx-10">
+        <section
+          class="flex flex-col basis-full lg:basis-1/2 min-w-0 gap-5 border border-white bg-white/15 p-8"
+        >
+          <h2
+            class="flex flex-row justify-start items-center gap-2 afacad-flux-bold text-3xl"
+            id="timing--urgency"
+          >
+            <svg class="size-6 fill-white/60">
+              <use href="#icon--clock"></use>
+            </svg>
+            <span>Timing &amp; Urgency</span>
+          </h2>
+          <ul class="list-disc list-outside ml-4 space-y-2">
+            <li><strong>Standard Triage:</strong> 3–5 business days</li>
+            <li><strong>Priority Triage:</strong> Next business day</li>
+          </ul>
+          <p>
+            If your issue turns out to be more complex than expected or can’t be
+            completed in the requested timeframe, you’ll be notified promptly.
+          </p>
+        </section>
 
-      <section class="space-y-4">
-        <h2 class="afacad-flux-bold text-3xl" id="guarantee">
-          Guarantee
-        </h2>
-        <p>
-          This service covers <strong>triage and attempted resolution of non-outage web issues</strong>.
-        </p>
-        <p>
-          If no clear path forward is identified, you will receive a
-          <strong>full refund</strong>.
-        </p>
-      </section>
+        <section
+          class="flex flex-col basis-full lg:basis-1/2 min-w-0 gap-5 border border-white bg-white/15 p-8"
+        >
+          <h2
+            class="flex flex-row justify-start items-center gap-2 afacad-flux-bold text-3xl"
+            id="guarantee"
+          >
+            <svg class="size-6 fill-white/60">
+              <use href="#icon--shield-check"></use>
+            </svg>
+            <span>Guarantee</span>
+          </h2>
+          <p>
+            This service covers
+            <strong
+              >triage and attempted resolution of non-outage web issues</strong
+            >.
+          </p>
+          <p>
+            If no clear path forward is identified, you will receive a
+            <strong>full refund</strong>.
+          </p>
+        </section>
+      </div>
 
       <section class="space-y-4">
         <h2 class="afacad-flux-bold text-3xl" id="why-trust-this-service">
@@ -177,61 +235,73 @@
           <li>Clear boundaries and straightforward communication</li>
         </ul>
         <p>
-          We don’t oversell what’s possible, and we won’t leave you guessing about
-          where things stand.
+          We don’t oversell what’s possible, and we won’t leave you guessing
+          about where things stand.
         </p>
       </section>
 
-      <section class="space-y-4 lg:-ml-10 lg:-mr-10">
-        <h2 class="afacad-flux-bold text-5xl/14 tracking-wider text-center mb-8" id="lets-go">
+      <section class="space-y-4 lg:-mx-10">
+        <h2
+          class="afacad-flux-bold text-5xl/14 tracking-wider text-center mb-8"
+          id="lets-go"
+        >
           Ready to hand off your issue?
         </h2>
-        
-        <div class="flex justify-between gap-8">
+
+        <div class="grid grid-cols-2 gap-8">
           <div class="flex flex-col gap-5 border border-white bg-white/15 p-8">
-            <h3 class="flex justify-center items-center text-xl font-semibold mb-2 gap-1.5">
+            <h3
+              class="flex justify-center items-center text-xl font-semibold mb-2 gap-1.5"
+            >
               <svg class="size-6 fill-red-400/90">
                 <use href="#icon--standard"></use>
               </svg>
               <span>Standard Triage</span>
             </h3>
-            <p class="lato-black text-5xl tracking-wide mb-4 text-center">$250</p>
+            <p class="lato-black text-5xl tracking-wide mb-4 text-center">
+              $250
+            </p>
             <ul class="list-disc list-outside ml-4 mb-4 space-y-2">
               <li><strong>3–5 business day turnaround</strong></li>
               <li>Focused diagnosis and resolution of one issue</li>
               <li>Full refund if no clear path forward is identified</li>
             </ul>
-            <a href="#"
-               class="flex justify-center items-center rounded-md bg-linear-to-b from-slate-600/90 to-slate-800/90 hover:scale-105 transition duration-300 ease-in-out px-5 py-4 text-center text-white mt-auto afacad-flux-bold text-2xl tracking-wider">
+            <a
+              href="#"
+              class="flex justify-center items-center rounded-md bg-linear-to-b from-slate-600/90 to-slate-800/90 hover:scale-105 transition duration-300 ease-in-out px-5 py-4 text-center text-white mt-auto afacad-flux-bold text-2xl tracking-wider"
+            >
               Get Started
             </a>
           </div>
 
           <div class="flex flex-col gap-5 border border-white bg-white/15 p-8">
-            <h3 class="flex justify-center items-center text-xl font-semibold mb-2 gap-1">
+            <h3
+              class="flex justify-center items-center text-xl font-semibold mb-2 gap-1"
+            >
               <svg class="size-6 fill-amber-400/90">
                 <use href="#icon--priority"></use>
               </svg>
               <span>Priority Triage</span>
             </h3>
-            <p class="lato-black text-5xl tracking-wide mb-4 text-center">$450</p>
+            <p class="lato-black text-5xl tracking-wide mb-4 text-center">
+              $450
+            </p>
             <ul class="list-disc list-outside ml-4 mb-4 space-y-2">
               <li><strong>Next business day turnaround</strong></li>
               <li>Focused diagnosis and resolution of one issue</li>
               <li>Full refund if no clear path forward is identified</li>
             </ul>
-            <a href="#"
-               class="flex justify-center items-center rounded-md bg-linear-to-b from-slate-600/90 to-slate-800/90 hover:scale-105 transition duration-300 ease-in-out px-5 py-4 text-center text-white mt-auto afacad-flux-bold text-2xl tracking-wider">
+            <a
+              href="#"
+              class="flex justify-center items-center rounded-md bg-linear-to-b from-slate-600/90 to-slate-800/90 hover:scale-105 transition duration-300 ease-in-out px-5 py-4 text-center text-white mt-auto afacad-flux-bold text-2xl tracking-wider"
+            >
               Get Started
             </a>
           </div>
-        
         </div>
       </section>
 
-
-
-        <!-- <section class="space-y-4">
+      <!-- <section class="space-y-4">
       <h2 class="afacad-flux-bold text-3xl">Get in touch</h2>
       <p class="text-gray-700">
         The easiest way to reach me is via email or a short form.
@@ -247,7 +317,6 @@
         </a>
       </div>
     </section> -->
-      
     </main>
   </body>
 </html>
