@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todd Prouty</title>
+    <title>Rapid Web Triage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -94,26 +94,29 @@
     </svg>
 
     <header class="max-w-3xl mx-auto px-6 py-6">
-      <!-- <div
-        class="flex items-center gap-x-1 afacad-flux-bold tracking-wide text-2xl text-white"
-      >
-        <svg class="size-4 fill-teal-100/95">
-          <use href="#icon--standard"></use>
-        </svg>
-        <span class="bg-linear-to-b from-teal-200/95 to-teal-500/95 bg-clip-text text-transparent">Rapid Web Triage</span>
-      </div> -->
       <div
-        class="flex items-center gap-x-1 afacad-flux-bold tracking-wide text-2xl text-teal-500/80"
+        class="flex justify-between items-center afacad-flux-bold tracking-wide text-2xl text-teal-500/80"
       >
-        <svg class="size-4 fill-teal-500/80">
-          <use href="#icon--standard"></use>
-        </svg>
-        <span class="">Rapid Web Triage</span>
+        <div class="flex items-center gap-x-1">
+          <svg class="size-4 fill-teal-500/80">
+            <use href="#icon--standard"></use>
+          </svg>
+          <span class="">Rapid Web Triage</span>
+        </div>
+
+        <div class="flex justify-center">
+          <a
+            href="#ready"
+            class="flex items-center gap-3 px-5 py-3 text-white bg-linear-to-b from-teal-500/90 to-teal-700/90 transition hover:scale-105 duration-300 ease-in-out rounded-md afacad-flux-bold text-2xl tracking-wider"
+          >
+            <span>Fix my bug!</span>
+          </a>
+        </div>
       </div>
     </header>
 
     <main class="max-w-3xl mx-auto px-6 py-24 space-y-24 -mt-12">
-      <section class="flex flex-col space-y-10">
+      <section class="flex flex-col space-y-14">
         <h1 class="text-5xl/16 text-center lg:-mx-10">
           <div
             class="flex justify-center items-end gap-x-3 afacad-flux-bold tracking-wider"
@@ -139,33 +142,20 @@
           >
         </h1>
         <div
-          class="afacad-flux-regular text-3xl text-center border border-white bg-white/20 px-8 py-6 w-fit mx-auto"
+          class="afacad-flux-regular text-3xl text-center border border-white text-white bg-white/15 px-8 py-6 w-fit mx-auto"
         >
           No contracts. No retainers.<br />
           <strong class="tracking-wide"
             >One fixed payment. Guaranteed results.</strong
           >
         </div>
-        <p>
+        <p class="text-xl">
           <strong>Rapid Web Triage</strong> is senior-level troubleshooting for
           problems that aren't urgent enough to drop everything, but too
-          important to keep ignoring. This isn't emergency outage support—it's
-          expert help for issues that are dragging on longer than they should.
+          important to keep ignoring. This isn't emergency outage support
+          &mdash; it's expert help for issues that are dragging on longer than
+          they should.
         </p>
-        <div class="flex justify-center">
-          <a
-            href="#lets-go"
-            class="flex items-center gap-3 px-6 py-5 bg-linear-to-b from-teal-500/90 to-teal-700/90 transition hover:scale-105 duration-300 ease-in-out rounded-md afacad-flux-bold text-3xl tracking-wider"
-          >
-            <svg class="size-6 fill-white/40">
-              <use href="#icon--arrow-fat-right"></use>
-            </svg>
-            <span>Let's get started!</span>
-            <svg class="size-6 fill-white/40 rotate-180">
-              <use href="#icon--arrow-fat-right"></use>
-            </svg>
-          </a>
-        </div>
       </section>
 
       <hr class="border-white/20" />
@@ -187,7 +177,7 @@
       </section>
 
       <section
-        class="space-y-4 border border-white bg-white/20 px-8 py-7 w-fit mx-autotext-pretty"
+        class="space-y-4 border border-white bg-white/15 px-8 py-7 w-fit mx-autotext-pretty"
       >
         <h2
           class="afacad-flux-bold text-4xl tracking-wider text-center mb-8"
@@ -365,7 +355,7 @@
       <section class="space-y-4 lg:-mx-10">
         <h2
           class="flex justify-center items-center gap-x-3 afacad-flux-bold text-5xl/14 tracking-wider text-center mb-8"
-          id="lets-go"
+          id="ready"
         >
           <span>Ready to hand off your issue?</span>
           <span class="flex h-lh items-center">
@@ -428,22 +418,16 @@
         </div>
       </section>
 
-      <!-- <section class="space-y-4">
-      <h2 class="afacad-flux-bold text-3xl">Get in touch</h2>
-      <p class="text-gray-700">
-        The easiest way to reach me is via email or a short form.
-      </p>
-      <div class="flex gap-4">
-        <a href="mailto:you@email.com"
-           class="inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white">
-          Email me
-        </a>
-        <a href="https://tally.so/your-form"
-           class="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium">
-          Contact form
-        </a>
-      </div>
-    </section> -->
+      <footer class="border-t border-white/20 pt-8 max-w-3xl mx-auto -mb-12">
+        <p class="text-center text-white/95 text-base">
+          &copy; 2026 Todd Prouty. All rights reserved. |
+          <a
+            href="mailto:triage@toddprouty.com"
+            class="underline hover:no-underline"
+            >Contact</a
+          >
+        </p>
+      </footer>
     </main>
   </body>
 </html>
