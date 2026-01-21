@@ -115,36 +115,41 @@
       </div>
     </header>
 
-    <main class="mx-auto -mt-12 max-w-3xl space-y-24 px-6 py-24">
-      <section class="flex flex-col space-y-14">
-        <h1
-          class="text-left text-4xl/12 md:text-center md:text-5xl/16 lg:-mx-10"
-        >
+    <main
+      class="relative mx-auto max-w-3xl space-y-(--mobile-spacing) px-6 py-10 [--mobile-spacing:--spacing(18)] md:space-y-24 md:py-12"
+    >
+      <section class="flex flex-col space-y-12 md:space-y-14">
+        <h1 class="text-center text-4xl/10 md:text-5xl/16 lg:-mx-10">
           <div
-            class="afacad-flux-bold flex items-end justify-center gap-x-3 tracking-wider"
+            class="afacad-flux-bold flex justify-center gap-x-3 tracking-wider md:items-end"
           >
             <span>Issues piling up?<br />Stuck on a tricky bug?</span>
-            <span class="hidden h-lh items-center md:flex">
+            <span
+              class="absolute -top-6 right-6 h-lh items-center md:static md:flex"
+            >
               <svg class="size-12 rotate-210 fill-orange-400/90">
                 <use href="#icon--bug2"></use>
               </svg>
             </span>
           </div>
-          <span
-            class="afacad-flux-regular inline-block bg-linear-to-b from-teal-300/95 to-teal-600/95 bg-clip-text tracking-wide text-transparent"
-            >Get senior-level help</span
-          >
-          <em
-            class="afacad-flux-regular gradient-underline inline-block tracking-wider italic"
-            >without</em
-          >
-          <span
-            class="afacad-flux-regular inline-block bg-linear-to-b from-teal-300/95 to-teal-600/95 bg-clip-text tracking-wide text-transparent"
-            >a long-term commitment</span
-          >
+          <div>
+            <span
+              class="afacad-flux-regular inline bg-linear-to-b from-teal-300/95 to-teal-600/95 bg-clip-text tracking-wide text-transparent"
+              >Get senior-level help</span
+            >
+            <em
+              class="afacad-flux-regular gradient-underline inline tracking-wider italic"
+              >without</em
+            >
+            <br class="max-md:hidden" />
+            <span
+              class="afacad-flux-regular inline bg-linear-to-b from-teal-300/95 to-teal-600/95 bg-clip-text tracking-wide text-transparent"
+              >a long-term commitment</span
+            >
+          </div>
         </h1>
         <div
-          class="afacad-flux-regular mx-auto w-fit border border-white bg-white/15 px-8 py-6 text-center text-3xl text-white"
+          class="afacad-flux-regular mx-auto w-fit border border-white bg-white/15 p-4 text-center text-3xl text-pretty text-white md:px-8 md:py-6"
         >
           No contracts. No retainers.<br />
           <strong class="tracking-wide"
@@ -164,7 +169,7 @@
 
       <section class="mx-auto w-fit space-y-4">
         <h2
-          class="afacad-flux-bold mb-8 text-center text-4xl tracking-wider"
+          class="afacad-flux-bold mb-8 text-center text-3xl tracking-wider md:text-4xl"
           id="who-this-is-for"
         >
           Who this is for
@@ -182,7 +187,7 @@
         class="mx-autotext-pretty w-fit space-y-4 border border-white bg-white/15 px-8 py-7"
       >
         <h2
-          class="afacad-flux-bold mb-8 text-center text-4xl tracking-wider"
+          class="afacad-flux-bold mb-8 text-center text-3xl tracking-wider md:text-4xl"
           id="what"
         >
           What we can help with
@@ -207,7 +212,7 @@
 
       <section class="mx-auto w-fit space-y-4">
         <h2
-          class="afacad-flux-bold mb-8 text-center text-4xl tracking-wider"
+          class="afacad-flux-bold mb-8 text-center text-3xl tracking-wider md:text-4xl"
           id="how"
         >
           How it works
@@ -269,12 +274,12 @@
         </ol>
       </section>
 
-      <div class="grid grid-cols-2 gap-8 lg:-mx-10">
+      <div class="md:grid md:grid-cols-2 md:gap-8 lg:-mx-10">
         <section
-          class="flex min-w-0 basis-full flex-col gap-5 border border-white bg-white/15 p-8 lg:basis-1/2"
+          class="mb-(--mobile-spacing) flex basis-full flex-col gap-5 border border-white bg-white/15 p-6 md:m-0 md:p-8 lg:basis-1/2"
         >
           <h2
-            class="afacad-flux-bold flex flex-row items-center justify-start gap-x-3 text-3xl"
+            class="afacad-flux-bold flex flex-row items-center justify-center gap-x-3 text-3xl md:justify-start"
             id="timing"
           >
             <svg class="size-6 fill-white/60">
@@ -307,10 +312,10 @@
         </section>
 
         <section
-          class="flex min-w-0 basis-full flex-col gap-5 border border-white bg-white/15 p-8 lg:basis-1/2"
+          class="flex basis-full flex-col gap-5 border border-white bg-white/15 p-6 md:p-8 lg:basis-1/2"
         >
           <h2
-            class="afacad-flux-bold flex flex-row items-center justify-start gap-2 text-3xl"
+            class="afacad-flux-bold flex flex-row items-center justify-center gap-2 text-3xl md:justify-start"
             id="guarantee"
           >
             <svg class="size-6 fill-white/60">
@@ -331,7 +336,7 @@
 
       <section class="space-y-4">
         <h2
-          class="afacad-flux-bold mb-8 text-center text-4xl tracking-wider"
+          class="afacad-flux-bold mb-8 text-center text-3xl tracking-wider md:text-4xl"
           id="why"
         >
           Why trust this service?
@@ -356,10 +361,10 @@
 
       <section class="space-y-4 lg:-mx-10">
         <h2
-          class="afacad-flux-bold mb-8 flex items-center justify-center gap-x-3 text-center text-5xl/14 tracking-wider"
+          class="afacad-flux-bold mb-8 flex items-center justify-center gap-x-3 text-center text-4xl tracking-wider md:text-5xl/14"
           id="ready"
         >
-          <span>Ready to hand off your issue?</span>
+          <span class="text-pretty">Ready to hand off your issue?</span>
           <span class="flex h-lh items-center">
             <svg class="size-12 rotate-210 fill-orange-400/90">
               <use href="#icon--bug2"></use>
@@ -367,8 +372,10 @@
           </span>
         </h2>
 
-        <div class="grid grid-cols-2 gap-8">
-          <div class="flex flex-col gap-5 border border-white bg-white/15 p-8">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div
+            class="mb-8 flex flex-col gap-5 border border-white bg-white/15 p-8 md:m-0"
+          >
             <h3
               class="mb-2 flex items-center justify-center gap-1.5 text-xl font-semibold"
             >
@@ -420,8 +427,10 @@
         </div>
       </section>
 
-      <footer class="mx-auto -mb-12 max-w-3xl border-t border-white/20 pt-8">
-        <p class="text-center text-base text-white/95">
+      <footer
+        class="mx-auto -mt-6 -mb-[calc(var(--mobile-spacing)/2)] max-w-3xl border-t border-white/20 p-8"
+      >
+        <p class="text-center text-sm text-white/95 md:text-base">
           &copy; 2026 Todd Prouty. All rights reserved. |
           <a
             href="mailto:triage@toddprouty.com"
