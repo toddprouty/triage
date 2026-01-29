@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /intake.html
-Disallow: /thank-you.html
+Disallow: /intake
+Disallow: /thank-you
