@@ -360,6 +360,161 @@
         </p>
       </section>
 
+      <section
+        class="space-y-6"
+        x-data="{
+          current: 0,
+          total: 5,
+          prev() { this.current = (this.current - 1 + this.total) % this.total },
+          next() { this.current = (this.current + 1) % this.total },
+        }"
+      >
+        <h2
+          class="afacad-flux-bold mb-8 text-center text-3xl tracking-wider md:text-4xl"
+        >
+          What clients say
+        </h2>
+
+        <div class="overflow-hidden">
+          <div
+            class="flex transition-transform duration-400 ease-in-out"
+            :style="`transform: translateX(calc(-${current} * 100%))`"
+          >
+            <div class="w-full shrink-0">
+              <blockquote
+                class="border border-white/60 bg-white/10 p-6 italic lg:p-8"
+              >
+                <p class="text-pretty">
+                  &ldquo;You know that feeling when you&rsquo;ve run out of
+                  people to turn to and you&rsquo;re at your wit&rsquo;s end?
+                  That&rsquo;s where Todd comes in&hellip; He fixed it in less
+                  than a day. Friendly, professional, trustworthy, and
+                  confident&hellip; An easy fix for Todd was a massive relief
+                  for me.&rdquo;
+                </p>
+                <footer
+                  class="mt-4 text-right font-semibold text-white/70 not-italic"
+                >
+                  — Dan Franch
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="w-full shrink-0">
+              <blockquote
+                class="border border-white/60 bg-white/10 p-6 italic lg:p-8"
+              >
+                <p class="text-pretty">
+                  &ldquo;Todd quickly understands project specifications,
+                  returns realistic estimates, makes important (but not
+                  excessive) suggestions, and is completely reliable. He is my
+                  go-to guy whenever the work needed fits his skill set.&rdquo;
+                </p>
+                <footer
+                  class="mt-4 text-right font-semibold text-white/70 not-italic"
+                >
+                  — A.B.
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="w-full shrink-0">
+              <blockquote
+                class="border border-white/60 bg-white/10 p-6 italic lg:p-8"
+              >
+                <p class="text-pretty">
+                  &ldquo;Todd wrote some of the cleanest front-end code
+                  I&rsquo;ve seen&hellip; I knew I wouldn&rsquo;t have to go
+                  back to him with change requests or bug fixes.&rdquo;
+                </p>
+                <footer
+                  class="mt-4 text-right font-semibold text-white/70 not-italic"
+                >
+                  — J.D.
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="w-full shrink-0">
+              <blockquote
+                class="border border-white/60 bg-white/10 p-6 italic lg:p-8"
+              >
+                <p class="text-pretty">
+                  &ldquo;Todd was always quick and responsive when making
+                  changes and fixing bugs.&rdquo;
+                </p>
+                <footer
+                  class="mt-4 text-right font-semibold text-white/70 not-italic"
+                >
+                  — T.O.
+                </footer>
+              </blockquote>
+            </div>
+
+            <div class="w-full shrink-0">
+              <blockquote
+                class="border border-white/60 bg-white/10 p-6 italic lg:p-8"
+              >
+                <p class="text-pretty">
+                  &ldquo;Todd has the technical ability to masterfully develop
+                  the front end of any website or web app&hellip; He&rsquo;s
+                  also got a great design eye and is a stickler for
+                  detail.&rdquo;
+                </p>
+                <footer
+                  class="mt-4 text-right font-semibold text-white/70 not-italic"
+                >
+                  — B.N.
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-6">
+          <button
+            @click="prev()"
+            aria-label="Previous testimonial"
+            class="rounded-full border border-white/60 bg-white/10 p-2 transition hover:bg-white/20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <button
+            @click="next()"
+            aria-label="Next testimonial"
+            class="rounded-full border border-white/60 bg-white/10 p-2 transition hover:bg-white/20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
       <section class="-mt-20 space-y-4 pt-20 lg:-mx-10" id="ready">
         <h2
           class="afacad-flux-bold mb-10 flex items-center justify-center gap-x-3 text-center text-4xl tracking-wider md:text-5xl/14"
@@ -492,5 +647,10 @@
         &copy; 2026 Todd Prouty. All rights reserved.
       </p>
     </footer>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </body>
 </html>
