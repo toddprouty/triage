@@ -177,5 +177,5 @@
 }
 
 h3 {
-  @apply wunderline-2;
+  @apply wunderline-2 text-white;
 }
