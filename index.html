@@ -192,7 +192,7 @@
       </section>
 
       <section
-        class="mx-autotext-pretty w-fit space-y-4 border border-white/60 bg-white/15 px-8 py-7"
+        class="mx-autotext-pretty w-fit gap-8 space-y-4 border border-white/60 bg-white/15 px-8 py-7 lg:-mx-40"
       >
         <h2
           class="afacad-flux-bold mb-8 text-center text-3xl tracking-wider md:text-4xl"
@@ -200,18 +200,74 @@
         >
           What we can help with
         </h2>
-        <p>Common examples include:</p>
-        <ul class="ml-4 list-outside list-disc space-y-2">
-          <li>
-            Broken layouts or CSS issues (Flexbox, Grid, responsive problems)
-          </li>
-          <li>CMS configuration, content modeling, or template quirks</li>
-          <li>
-            JavaScript bugs that are confusing, inconsistent, or failing
-            silently
-          </li>
-          <li>Performance issues where the root cause isn’t obvious</li>
-        </ul>
+
+        <div class="space-y-5 md:columns-2 xl:columns-3">
+          <div>
+            <h3 class="wunderline-2 mb-2 font-semibold">Layout &amp; CSS</h3>
+            <ul class="ml-4 list-outside list-disc space-y-2">
+              <li>Broken responsive/mobile layouts</li>
+              <li>Flexbox and Grid problems</li>
+              <li>Cross-browser rendering issues</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-2 font-semibold">JavaScript bugs</h3>
+            <ul class="ml-4 list-outside list-disc space-y-2">
+              <li>Console errors you can&rsquo;t trace</li>
+              <li>Silent failures and inconsistent behavior</li>
+              <li>
+                Framework issues: component-level bugs, rendering issues,
+                integration problems
+                <ul class="mt-1 ml-4 list-outside list-disc space-y-1">
+                  <li>React</li>
+                  <li>Vue</li>
+                  <li>Angular</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="md:break-after-column lg:break-after-auto xl:break-before-column"
+          >
+            <h3 class="mb-2 font-semibold">CMS issues</h3>
+            <ul class="ml-4 list-outside list-disc space-y-2">
+              <li>Configuration quirks</li>
+              <li>Template and content modeling problems</li>
+              <li>Unexpected behavior after updates</li>
+              <li>
+                CMS-specific issues
+                <ul class="mt-1 ml-4 list-outside list-disc space-y-1">
+                  <li>WordPress</li>
+                  <li>Craft CMS</li>
+                  <li>others</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="break-before-column xl:break-before-auto">
+            <h3 class="mb-2 font-semibold">Performance issues</h3>
+            <ul class="ml-4 list-outside list-disc space-y-2">
+              <li>Slow load times when the root cause isn&rsquo;t obvious</li>
+              <li>Render-blocking resources</li>
+              <li>Inefficient queries or asset loading</li>
+            </ul>
+          </div>
+          <div class="xl:break-before-column">
+            <h3 class="mb-2 font-semibold">Third-party integrations</h3>
+            <ul class="ml-4 list-outside list-disc space-y-2">
+              <li>Broken embeds or widgets</li>
+              <li>Failing external scripts or APIs</li>
+              <li>Plugin and script conflicts</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-2 font-semibold">AI weirdness</h3>
+            <ul class="ml-4 list-outside list-disc space-y-2">
+              <li>Inefficient generated code</li>
+              <li>Vibe coding messes</li>
+            </ul>
+          </div>
+        </div>
         <p class="mt-4">
           This service focuses on <strong>diagnosis and targeted fixes</strong>,
           not large refactors or long-term projects.
